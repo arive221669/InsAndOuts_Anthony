@@ -10,11 +10,11 @@ PImage map6;
 
 // each map will display for 5 seconds
 int time1 = 0;
-int time2 = 5000;
-int time3 = 10000;
-int time4 = 15000;
-int time5 = 20000;
-int time6 = 25000;
+int time2 = 7000;
+int time3 = 14000;
+int time4 = 21000;
+int time5 = 28000;
+int time6 = 35000;
 
 void setup(){
 size(1619,1050);
