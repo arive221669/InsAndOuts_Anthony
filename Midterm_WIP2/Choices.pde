@@ -19,8 +19,8 @@ void keyPressed (){
       } else if (game == "stage1" && key == 'a'){
           chances = chances - 1;
           background(0);
-          println(chances);
           wrong = "wrong";
+          println(chances);
       }
       
            if (game == "stage2" && key == 'l'){
@@ -34,8 +34,6 @@ void keyPressed (){
           chances = chances - 1;
           background(0);
           wrong = "wrong";
-          
-
           println(chances);
       }
       
@@ -54,56 +52,58 @@ void keyPressed (){
       
       else if (game == "end" && key == 's' || key == 'S'){
         forward = 0;
-        game = "stage1";
-        choices = "secondrun";
+        state = "pregame";
+        game = "start";
+        //choices = "secondrun";
       }
   }
+}
   
   
   // SECOND RUNTHROUGH
   
- if (choices == "secondrun"){ 
-   if (game == "stage1" && key == 'f'){
-         chances = 3;
-         background(0);
+ //if (choices == "secondrun"){ 
+ //  if (game == "stage1" && key == 'f'){
+ //        chances = 3;
+ //        background(0);
          
 
            
-           println(chances);
-      } else if (game == "stage1" && key == 'a'){
-          chances = chances - 1;
-          background(0);
+ //          println(chances);
+ //     } else if (game == "stage1" && key == 'a'){
+ //         chances = chances - 1;
+ //         background(0);
 
            
-          println(chances);
-      }
+ //         println(chances);
+ //     }
       
-           if (game == "stage2" && key == 'l'){
-         chances = 3;
-         background(3);
+ //          if (game == "stage2" && key == 'l'){
+ //        chances = 3;
+ //        background(3);
 
-         println(chances);
-      } else if (game == "stage2" && key == 'i'){
-          chances = chances - 1;
-          background(0);
+ //        println(chances);
+ //     } else if (game == "stage2" && key == 'i'){
+ //         chances = chances - 1;
+ //         background(0);
 
-          println(chances);
-      }
+ //         println(chances);
+ //     }
       
-       if (key == 'd'){
-         chances = 3;
-         background(0);
+ //      if (key == 'd'){
+ //        chances = 3;
+ //        background(0);
 
-         println(chances);
-      } else if (key == 'e'){
-          chances = chances - 1;
-          background(0);
+ //        println(chances);
+ //     } else if (key == 'e'){
+ //         chances = chances - 1;
+ //         background(0);
 
-          println(chances);
-          choices = "secondrun";
-      }
-    }
-}
+ //         println(chances);
+ //         choices = "secondrun";
+ //     }
+ //   }
+//}
 
 void correct(){
  background(0);

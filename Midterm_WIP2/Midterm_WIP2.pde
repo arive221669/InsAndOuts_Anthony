@@ -62,9 +62,6 @@ void draw(){
    fill(fadein,g,b);
   text("Dare to Escape", width/2, height/2-200 );
   text("If you would like to play the game Click the mouse.", width/2, height/2-150);
-  if (mouseState == true){
-  
-  }
 
   
   // FADE IN
@@ -144,7 +141,7 @@ void draw(){
     image(Ending,300, 50);
     text("What do the choices I gave you spell? \n\n F.A.I.L.E.D \n\n You really thought I would let you out of our new place together? (hehehehehe) \n\n Your live with me forever now \n\n\n\n Press 'S' to Try Again", width/2, height/2);
     forward = 0;
-    //if (mousePressed)
+    mouseState = false;
   }
 }
 
