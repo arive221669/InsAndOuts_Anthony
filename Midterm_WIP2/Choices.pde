@@ -54,56 +54,10 @@ void keyPressed (){
         forward = 0;
         state = "pregame";
         game = "start";
-        //choices = "secondrun";
       }
   }
 }
   
-  
-  // SECOND RUNTHROUGH
-  
- //if (choices == "secondrun"){ 
- //  if (game == "stage1" && key == 'f'){
- //        chances = 3;
- //        background(0);
-         
-
-           
- //          println(chances);
- //     } else if (game == "stage1" && key == 'a'){
- //         chances = chances - 1;
- //         background(0);
-
-           
- //         println(chances);
- //     }
-      
- //          if (game == "stage2" && key == 'l'){
- //        chances = 3;
- //        background(3);
-
- //        println(chances);
- //     } else if (game == "stage2" && key == 'i'){
- //         chances = chances - 1;
- //         background(0);
-
- //         println(chances);
- //     }
-      
- //      if (key == 'd'){
- //        chances = 3;
- //        background(0);
-
- //        println(chances);
- //     } else if (key == 'e'){
- //         chances = chances - 1;
- //         background(0);
-
- //         println(chances);
- //         choices = "secondrun";
- //     }
- //   }
-//}
 
 void correct(){
  background(0);

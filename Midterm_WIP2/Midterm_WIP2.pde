@@ -1,4 +1,4 @@
-import processing.sound.*; 
+import processing.sound.*;
 SoundFile Scary;
 
 String state = "pregame";
@@ -21,17 +21,15 @@ PImage Warehouse1;
 PImage Warehouse2;
 PImage Warehouse3;
 PImage Warehouse4;
-PImage Warehouse5;  
+PImage Warehouse5;
 PImage Ending;
 
 
-// Set states for the key presses so that they can be reused. check
 // Make text fade in at start.. set fade again in key presses.
-// set to go back to pregame.
-// Input sound for sense feel.
+//fullScreen and resize 
+
 
 void setup () {
-
   fullScreen();
   textAlign(CENTER);
   rectMode(CENTER);
