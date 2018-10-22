@@ -61,6 +61,7 @@ void keyPressed (){
 
 void correct(){
  background(0);
+ image(Popup3, 25, 150);
  text("Ughh.. you got it right.. moving on", width/2, height/2);
  text("Press 'B' to go forward", width/2, height/2 + 50);
  if (key == 'b' || key == 'B'){
@@ -82,6 +83,7 @@ void correct(){
 
 void incorrect(){
   background(0);
+  image(popup2, 25, 150);
   text("Wrong, maybe next time (hehehe)", width/2, height/2);
   text ("Press 'B' to go forward", width/2 , height/2 + 50);
    if (key == 'b' || key == 'B'){
