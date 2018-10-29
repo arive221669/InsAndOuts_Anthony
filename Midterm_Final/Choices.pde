@@ -12,38 +12,32 @@ void keyPressed (){
     } 
     
         if (game == "stage1" && key == 'f' || key == 'F'){
-         chances = 3;
          background(0);
          right = "correct";
          println(chances);
       } else if (game == "stage1" && key == 'a'){
-          chances = chances - 1;
           background(0);
           wrong = "wrong";
           println(chances);
       }
       
            if (game == "stage2" && key == 'l'){
-         chances = 3;
-         background(3);
+         background(0);
          right = "correct";
          
 
          println(chances);
       } else if (game == "stage2" && key == 'i'){
-          chances = chances - 1;
           background(0);
           wrong = "wrong";
           println(chances);
       }
       
        if (game == "stage3" && key == 'd'){
-         chances = 3;
          background(0);
          right = "correct";
            println(chances);
       } else if (game == "stage3" && key == 'e'){
-          chances = chances - 1;
           background(0);
           wrong = "wrong";
           
@@ -82,6 +76,7 @@ void correct(){
 }
 
 void incorrect(){
+  chances = chances - 1;
   background(0);
   image(popup2, 25, 150);
   text("Wrong, maybe next time (hehehe)", width/2, height/2);
